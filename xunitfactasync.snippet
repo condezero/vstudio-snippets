@@ -7,8 +7,8 @@
       </SnippetTypes>
       <Title>xUnit Fact</Title>
       <Shortcut>fact</Shortcut>
-      <Description>Code snippet for an xUnit test method (Fact) following the naming convention UnitOfWork_StateUnderTest_ExpectedBehaviour.</Description>
-      <Author>Marc Duiker</Author>
+      <Description>Code snippet for an xUnit async test method (Fact).</Description>
+      <Author>Carlos Lisandra</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -18,9 +18,9 @@
       </Imports>
       <Declarations>
         <Literal>
-          <ID>UnitOfWork</ID>
+          <ID>FunctionUnderTest</ID>
           <ToolTip>Describe the unit that will be tested.</ToolTip>
-          <Default>UnitOfWork</Default>
+          <Default>FunctionUnderTest</Default>
         </Literal>
         <Literal>
           <ID>StateUnderTest</ID>
@@ -38,7 +38,7 @@
           </Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[[$Fact$]
-      public void $UnitOfWork$_$StateUnderTest$_$ExpectedBehaviour$()
+      public async Task $FunctionUnderTest$_$StateUnderTest$_$ExpectedBehaviour$()
       {
           // Arrange
           $end$
